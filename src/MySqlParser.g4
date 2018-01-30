@@ -1,15 +1,21 @@
-parser grammar SimpleMySqlParser;
+parser grammar MySqlParser;
 
 options { tokenVocab=MySqlLexer; }
 
-sqlCommand
-    : sql SEMI EOF
-    | SEMI EOF
+sql
+    @init {
+        // System.out.println("[Rule: sqlCommand]");
+    }
+    : (sqlCommand SEMI)* EOF
+    | (SEMI)* EOF
     ;
 
-sql
+sqlCommand
+    @init {
+        // System.out.println("[Rule: sql]");
+    }
     : use
-    | createDatabase | dropDatabase
+    | createDatabase | dropDatabase | createView
     | createTable | dropTable | renameTable
     | select | insert | update | delete | replace
     ;
@@ -27,11 +33,19 @@ use
 //-----------------------------------------------------------------------------
 
 createDatabase
-    : CREATE DATABASE ifNotExists? id
+    @init {
+        // System.out.println("[Rule: createDatabase]");
+    }
+    : CREATE (DATABASE | SCHEMA) ifNotExists? id
     ;
 
 dropDatabase
-    : DROP DATABASE ifExists? id
+    : DROP (DATABASE | SCHEMA) ifExists? id
+    ;
+
+createView
+    : CREATE (OR REPLACE)? VIEW id ('(' ids ')')? AS
+      select (WITH (CASCADED | LOCAL)? CHECK OPTION)?
     ;
 
 //-----------------------------------------------------------------------------
@@ -39,7 +53,69 @@ dropDatabase
 //-----------------------------------------------------------------------------
 
 createTable
-    : CREATE TEMPORARY? TABLE ifNotExists? ID (LIKE ID)?
+    : CREATE TEMPORARY? TABLE ifNotExists? id (LIKE id)?
+    | CREATE TEMPORARY? TABLE ifNotExists? id
+      '(' createColumn (',' createColumn)* ')'
+    ;
+
+createColumn
+    : id dataType columnConstraint*
+    | tableConstraint
+    | indexColumnDefinition
+    ;
+
+columnConstraint
+    : nullOrNotNull
+    | DEFAULT defaultValue
+    | AUTO_INCREMENT
+    | PRIMARY? KEY
+    | UNIQUE KEY?
+    | COMMENT STRING_LITERAL
+    | referenceDefinition
+    ;
+
+tableConstraint
+    : (CONSTRAINT id?)? PRIMARY KEY USING? indexColumnNames indexOption*
+    | (CONSTRAINT id?)?
+      UNIQUE (INDEX | KEY)? id?
+      USING? indexColumnNames indexOption*
+    | (CONSTRAINT id?)?
+      FOREIGN KEY id? indexColumnNames
+      referenceDefinition
+    | CHECK '(' expression ')'
+    ;
+
+referenceDefinition
+    : REFERENCES idSubId indexColumnNames (MATCH (FULL | PARTIAL | SIMPLE))? referenceAction?
+    ;
+
+referenceAction
+    : ON DELETE referenceControlType (ON UPDATE referenceControlType)?
+    | ON UPDATE referenceControlType (ON DELETE referenceControlType)?
+    ;
+
+referenceControlType
+    : RESTRICT | CASCADE | SET NULL_LITERAL | NO ACTION
+    ;
+
+indexColumnDefinition
+    : (INDEX | KEY) id? USING? indexColumnNames indexOption*
+    | (FULLTEXT | SPATIAL) (INDEX | KEY)? id? indexColumnNames indexOption*
+    ;
+
+indexColumnNames
+    : '(' indexColumnName (',' indexColumnName)* ')'
+    ;
+
+indexColumnName
+    : id ('(' decimalLiteral ')')? (ASC | DESC)?
+    ;
+
+indexOption
+    : KEY_BLOCK_SIZE '='? fileSizeLiteral
+    | USING
+    | WITH PARSER id
+    | COMMENT STRING_LITERAL
     ;
 
 dropTable
@@ -70,7 +146,13 @@ selectModifier
     ;
 
 selectRows
-    : ('*' | ID ) (',' ID)*
+    : ('*' | selectRow ) (',' selectRow)*
+    ;
+
+selectRow
+    : idSubId (AS? id)?
+    | idSubId '.' '*'
+    | (LOCAL_ID VAR_ASSIGN)? expression (AS? id)?
     ;
 
 selectInto
@@ -79,7 +161,7 @@ selectInto
     ;
 
 fromClause
-    : FROM ID
+    : FROM tableContents
       (WHERE expression)?
       (
         GROUP BY
@@ -87,6 +169,27 @@ fromClause
         (WITH ROLLUP)?
       )?
       (HAVING expression)?
+    ;
+
+tableContents
+    : tableContent (',' tableContent)*
+    ;
+
+tableContent
+    : tableRow join* | '(' tableRow join*')'
+    ;
+
+tableRow
+    : idSubId
+    | (select | '(' select ')') AS? id
+    | '(' tableContents ')'
+    ;
+
+join
+    : (INNER | CROSS)? JOIN tableRow (ON expression | USING '(' ids ')')?
+    | STRAIGHT_JOIN tableRow (ON expression)?
+    | (LEFT | RIGHT) OUTER? JOIN tableRow (ON expression | USING '(' ids ')')
+    | NATURAL ((LEFT | RIGHT) OUTER?)? JOIN tableRow
     ;
 
 orderByClause
@@ -218,12 +321,16 @@ constant
     ;
 
 stringLiteral
-    : STRING_CHARSET_NAME? STRING_LITERAL STRING_LITERAL+
+    : (STRING_CHARSET_NAME? STRING_LITERAL | START_NATIONAL_STRING_LITERAL) STRING_LITERAL+
+    | (STRING_CHARSET_NAME? STRING_LITERAL | START_NATIONAL_STRING_LITERAL)
     ;
 
 decimalLiteral
     : DECIMAL_LITERAL | ZERO_DECIMAL | ONE_DECIMAL | TWO_DECIMAL
     ;
+
+fileSizeLiteral
+    : FILESIZE_LITERAL | decimalLiteral;
 
 hexadecimalLiteral
     : STRING_CHARSET_NAME? HEXADECIMAL_LITERAL
@@ -307,6 +414,9 @@ mathOperator
 //-----------------------------------------------------------------------------
 
 id
+    @init {
+        // System.out.println("[Rule: id]");
+    }
     : ID
     | intervalType
     | dataType
@@ -329,17 +439,40 @@ idSubId
 // Common
 //-----------------------------------------------------------------------------
 
+defaultValue
+    : NULL_LITERAL
+    | constant
+    | CURRENT_TIMESTAMP (ON UPDATE LOCALTIMESTAMP)?
+    ;
+
 nullOrNotNull
     : NOT? NULL_LITERAL
     ;
 
 intervalType
-    : QUARTER | MONTH | DAY | HOUR
-    | MINUTE | WEEK | SECOND | MICROSECOND
+    : MONTH | DAY | HOUR | MINUTE | WEEK | SECOND | MICROSECOND
     ;
 
 dataType
-    : DATE | TIME | TIMESTAMP | DATETIME | YEAR | ENUM | TEXT
+    : (CHAR | VARCHAR | TINYTEXT | TEXT | MEDIUMTEXT | LONGTEXT) length? BINARY?
+    | (INT | INTEGER | BIGINT | TINYINT | SMALLINT | MEDIUMINT) length? UNSIGNED? ZEROFILL?
+    | (REAL | DOUBLE | FLOAT) lengthTwoDimension? UNSIGNED? ZEROFILL?
+    | (DECIMAL | NUMERIC) lengthTwoDimensionOptional? UNSIGNED? ZEROFILL?
+    | (DATE | TINYBLOB | BLOB | MEDIUMBLOB | LONGBLOB | BOOL | BOOLEAN)
+    | (BIT | TIME | TIMESTAMP | DATETIME | BINARY | VARBINARY | YEAR) length?
+    | (ENUM | SET) '(' STRING_LITERAL (',' STRING_LITERAL)* ')' BINARY?
+    ;
+
+length
+    : '(' decimalLiteral ')'
+    ;
+
+lengthTwoDimension
+    : '(' decimalLiteral ',' decimalLiteral ')'
+    ;
+
+lengthTwoDimensionOptional
+    : '(' decimalLiteral (',' decimalLiteral)? ')'
     ;
 
 ifExists

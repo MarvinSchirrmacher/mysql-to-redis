@@ -1,0 +1,23 @@
+{
+	"set": {
+		"adresse": [
+			{
+				"strasse": "Hochstrasse",
+				"hausnummer": "85",
+				"plz": "25932",
+				"ort": "Wyk",
+				"bemerkung": null
+			}
+		]
+	},
+	"get": {
+		"adresse": {
+			"columns": ["strasse", "hausnummer", "plz", "ort", "bemerkung"],
+			"rows": [0, 1, 2, 3]
+		},
+		"tarif": {
+			"columns": ["bezeichnung", "stufe", "stundenlohn"],
+			"rows": []
+		}
+	}
+}

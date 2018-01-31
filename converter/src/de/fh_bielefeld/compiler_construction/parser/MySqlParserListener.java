@@ -1,4 +1,4 @@
-package de.fh_bielefeld.compiler_construction.parser;// Generated from /Users/MarvinSchirrmacher/Applications/fh-bielefeld-compilerbau/parser/src/MySqlParser.g4 by ANTLR 4.7
+package de.fh_bielefeld.compiler_construction.parser;// Generated from /Users/MarvinSchirrmacher/Applications/fh-bielefeld-compilerbau/de.fh_bielefeld.compiler_construction.parser/src/MySqlParser.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**

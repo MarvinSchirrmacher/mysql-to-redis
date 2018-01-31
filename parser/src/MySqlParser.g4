@@ -221,7 +221,7 @@ insert
 
 insertValue
     : select
-    | (VALUES | VALUE)
+    | insertFormat=(VALUES | VALUE)
       '(' expressionsOrDefaults ')' (',' '(' expressionsOrDefaults ')')*
     ;
 

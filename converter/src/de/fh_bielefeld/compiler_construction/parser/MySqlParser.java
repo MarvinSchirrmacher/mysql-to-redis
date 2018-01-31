@@ -1,9 +1,12 @@
-package de.fh_bielefeld.compiler_construction.parser;// Generated from /Users/MarvinSchirrmacher/Applications/fh-bielefeld-compilerbau/parser/src/MySqlParser.g4 by ANTLR 4.7
+package de.fh_bielefeld.compiler_construction.parser;// Generated from /Users/MarvinSchirrmacher/Applications/fh-bielefeld-compilerbau/de.fh_bielefeld.compiler_construction.parser/src/MySqlParser.g4 by ANTLR 4.7
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
+import org.antlr.v4.runtime.misc.*;
 import org.antlr.v4.runtime.tree.*;
 import java.util.List;
+import java.util.Iterator;
+import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
 public class MySqlParser extends Parser {
@@ -654,7 +657,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSql(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSql(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -778,7 +781,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSqlCommand(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSqlCommand(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -910,7 +913,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitUse(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitUse(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -962,7 +965,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateDatabase(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateDatabase(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1038,7 +1041,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDropDatabase(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDropDatabase(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1121,7 +1124,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateView(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateView(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1248,7 +1251,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateTable(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateTable(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1403,7 +1406,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateColumn(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitCreateColumn(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1546,7 +1549,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitColumnConstraint(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitColumnConstraint(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1693,7 +1696,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitTableConstraint(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitTableConstraint(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -1940,7 +1943,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceDefinition(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceDefinition(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2028,7 +2031,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceAction(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceAction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2125,7 +2128,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceControlType(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitReferenceControlType(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2216,7 +2219,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnDefinition(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnDefinition(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2377,7 +2380,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnNames(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnNames(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2447,7 +2450,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnName(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexColumnName(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2533,7 +2536,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexOption(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIndexOption(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2633,7 +2636,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDropTable(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDropTable(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2725,7 +2728,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitRenameTable(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitRenameTable(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2794,7 +2797,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitRenameTableClause(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitRenameTableClause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -2861,7 +2864,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSelect(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSelect(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3031,7 +3034,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectModifier(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectModifier(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3087,7 +3090,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectRows(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectRows(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3261,7 +3264,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectRow(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectRow(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3388,7 +3391,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectInto(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSelectInto(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3487,7 +3490,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitFromClause(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitFromClause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3603,7 +3606,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitTableContents(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitTableContents(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3670,7 +3673,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitTableContent(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitTableContent(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3770,7 +3773,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitTableRow(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitTableRow(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -3887,7 +3890,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitJoin(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitJoin(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4169,7 +4172,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitOrderByClause(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitOrderByClause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4239,7 +4242,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitLimitClause(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitLimitClause(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4291,7 +4294,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitOrderByExpression(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitOrderByExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4356,7 +4359,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitGroupByExpression(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitGroupByExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4430,7 +4433,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitInsert(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitInsert(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4498,6 +4501,7 @@ public class MySqlParser extends Parser {
 	}
 
 	public static class InsertValueContext extends ParserRuleContext {
+		public Token insertFormat;
 		public SelectContext select() {
 			return getRuleContext(SelectContext.class,0);
 		}
@@ -4523,7 +4527,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitInsertValue(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitInsertValue(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4548,9 +4552,10 @@ public class MySqlParser extends Parser {
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(725);
+				((InsertValueContext)_localctx).insertFormat = _input.LT(1);
 				_la = _input.LA(1);
 				if ( !(_la==VALUES || _la==VALUE) ) {
-				_errHandler.recoverInline(this);
+					((InsertValueContext)_localctx).insertFormat = (Token)_errHandler.recoverInline(this);
 				}
 				else {
 					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
@@ -4642,7 +4647,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitUpdate(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitUpdate(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4774,7 +4779,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitUpdateAssignment(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitUpdateAssignment(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4836,7 +4841,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDelete(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDelete(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -4934,7 +4939,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitReplace(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitReplace(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5042,7 +5047,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitExpression(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitExpression(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5121,7 +5126,7 @@ public class MySqlParser extends Parser {
 			setState(824);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,122,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -5176,7 +5181,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressions(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressions(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5272,7 +5277,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitPredicate(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitPredicate(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5313,7 +5318,7 @@ public class MySqlParser extends Parser {
 			setState(899);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,132,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -5681,7 +5686,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionAtom(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionAtom(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -5830,7 +5835,7 @@ public class MySqlParser extends Parser {
 			setState(958);
 			_errHandler.sync(this);
 			_alt = getInterpreter().adaptivePredict(_input,137,_ctx);
-			while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER ) {
+			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
 				if ( _alt==1 ) {
 					if ( _parseListeners!=null ) triggerExitRuleEvent();
 					_prevctx = _localctx;
@@ -5901,7 +5906,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionOrDefault(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionOrDefault(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6051,7 +6056,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionsOrDefaults(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitExpressionsOrDefaults(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6125,7 +6130,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitConstant(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitConstant(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6231,7 +6236,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitStringLiteral(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitStringLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6296,7 +6301,7 @@ public class MySqlParser extends Parser {
 					setState(995); 
 					_errHandler.sync(this);
 					_alt = getInterpreter().adaptivePredict(_input,144,_ctx);
-				} while ( _alt!=2 && _alt!= ATN.INVALID_ALT_NUMBER );
+				} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
 				}
 				break;
 			case 2:
@@ -6365,7 +6370,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDecimalLiteral(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDecimalLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6419,7 +6424,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitFileSizeLiteral(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitFileSizeLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6480,7 +6485,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitHexadecimalLiteral(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitHexadecimalLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6534,7 +6539,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitBooleanLiteral(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitBooleanLiteral(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6590,7 +6595,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitFunction(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitFunction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6704,7 +6709,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSpecificFunction(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSpecificFunction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -6988,7 +6993,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitAggregateFunction(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitAggregateFunction(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7316,7 +7321,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitFunctionParameter(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitFunctionParameter(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7383,7 +7388,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitFunctionParameters(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitFunctionParameters(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7442,7 +7447,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitUnaryOperator(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitUnaryOperator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7492,7 +7497,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitComparisonOperator(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitComparisonOperator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7603,7 +7608,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitLogicalOperator(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitLogicalOperator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7684,7 +7689,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitBitOperator(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitBitOperator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7767,7 +7772,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitMathOperator(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitMathOperator(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7824,7 +7829,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitId(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitId(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7934,7 +7939,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIds(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIds(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -7996,7 +8001,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitSubId(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitSubId(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8063,7 +8068,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIdSubId(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIdSubId(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8132,7 +8137,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDefaultValue(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDefaultValue(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8210,7 +8215,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitNullOrNotNull(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitNullOrNotNull(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8269,7 +8274,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIntervalType(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIntervalType(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8367,7 +8372,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitDataType(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitDataType(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8696,7 +8701,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitLength(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitLength(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8747,7 +8752,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitLengthTwoDimension(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitLengthTwoDimension(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8802,7 +8807,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitLengthTwoDimensionOptional(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitLengthTwoDimensionOptional(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8862,7 +8867,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIfExists(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIfExists(this);
 			else return visitor.visitChildren(this);
 		}
 	}
@@ -8908,7 +8913,7 @@ public class MySqlParser extends Parser {
 		}
 		@Override
 		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MySqlParserVisitor) return ((MySqlParserVisitor<? extends T>)visitor).visitIfNotExists(this);
+			if ( visitor instanceof MySqlParserVisitor ) return ((MySqlParserVisitor<? extends T>)visitor).visitIfNotExists(this);
 			else return visitor.visitChildren(this);
 		}
 	}

@@ -3,18 +3,28 @@ package de.fh_bielefeld.compiler_construction;
 import org.apache.commons.cli.*;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
+/**
+ * Programs main class.
+ */
 public class Main {
     private final static String inputFileOption = "i";
+    private final static String genericRequestOption = "g";
 
+    /**
+     * Program entry point for this command line tool.
+     *
+     * Parses any options and start the adapter.
+     * @param args Command line arguments.
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         final Options options = getOptions();
         CommandLineParser parser = new DefaultParser();
         CommandLine commandLine;
 
         String inputFilePath = null;
+        Boolean saveGenericRequests = false;
 
         try {
             if (args.length == 0)
@@ -34,10 +44,18 @@ public class Main {
         if (commandLine.hasOption(inputFileOption))
             inputFilePath = commandLine.getOptionValue(inputFileOption);
 
-        MySqlToRedisConverter converter = new MySqlToRedisConverter();
-        converter.convert(inputFilePath);
+        if (commandLine.hasOption(genericRequestOption))
+            saveGenericRequests = true;
+
+        MySqlToRedisAdapter adapter = new MySqlToRedisAdapter();
+        adapter.setSaveGenericRequest(saveGenericRequests);
+        adapter.process(inputFilePath);
     }
 
+    /**
+     * Collects the option parameters.
+     * @return The filled options.
+     */
     private static Options getOptions() {
         Options options = new Options();
 
@@ -49,7 +67,13 @@ public class Main {
                 .desc("File path to the sql file to convert")
                 .build();
 
+        Option saveGenericRequests = Option.builder(genericRequestOption)
+                .longOpt("generic-requests")
+                .desc("If true the generic interim request will be saved to a json file")
+                .build();
+
         options.addOption(filepath);
+        options.addOption(saveGenericRequests);
 
         return options;
     }

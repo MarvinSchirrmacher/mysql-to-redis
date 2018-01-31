@@ -4501,6 +4501,7 @@ public class MySqlParser extends Parser {
 	}
 
 	public static class InsertValueContext extends ParserRuleContext {
+		public Token insertFormat;
 		public SelectContext select() {
 			return getRuleContext(SelectContext.class,0);
 		}
@@ -4551,9 +4552,10 @@ public class MySqlParser extends Parser {
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(725);
+				((InsertValueContext)_localctx).insertFormat = _input.LT(1);
 				_la = _input.LA(1);
 				if ( !(_la==VALUES || _la==VALUE) ) {
-				_errHandler.recoverInline(this);
+					((InsertValueContext)_localctx).insertFormat = (Token)_errHandler.recoverInline(this);
 				}
 				else {
 					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;

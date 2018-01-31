@@ -1,0 +1,1065 @@
+
+{
+    "get":{
+    },
+    "set":{
+        "adresse":[
+            {
+                "strasse":"Hochstrasse",
+                "hausnummer":85,
+                "plz":"25932",
+                "ort":"Wyk",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Fugger Strasse",
+                "hausnummer":37,
+                "plz":"14439",
+                "ort":"Potsdam",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Hollander Strasse",
+                "hausnummer":34,
+                "plz":"35305",
+                "ort":"Grünberg",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Rudower Strasse",
+                "hausnummer":17,
+                "plz":"54608",
+                "ort":"Großlangenfeld",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Schoenebergerstrasse",
+                "hausnummer":18,
+                "plz":"23921",
+                "ort":"Schönberg",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Anhalter Strasse",
+                "hausnummer":45,
+                "plz":"67742",
+                "ort":"Ginsweiler",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Rhinstrasse",
+                "hausnummer":28,
+                "plz":"80972",
+                "ort":"München",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Hedemannstasse",
+                "hausnummer":19,
+                "plz":"88361",
+                "ort":"Eichstegen",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Am Borsigturm",
+                "hausnummer":68,
+                "plz":"47805",
+                "ort":"Krefeld",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Rudolstaedter Strasse",
+                "hausnummer":63,
+                "plz":"63702",
+                "ort":"Aschaffenburg",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Meinekestraße",
+                "hausnummer":79,
+                "plz":"37434",
+                "ort":"Krebeck",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Kurfuerstendamm",
+                "hausnummer":41,
+                "plz":"74081",
+                "ort":"Heilbronn Klingenberg",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Eschenweg",
+                "hausnummer":81,
+                "plz":"07720",
+                "ort":"Jena",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Technologiepark",
+                "hausnummer":11,
+                "plz":"33100",
+                "ort":"Paderborn",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Graf-Adolf-Str.",
+                "hausnummer":63,
+                "plz":"40210",
+                "ort":"Düsseldorf",
+                "bemerkung":null
+            },
+            {
+                "strasse":"Graf-Adolf-Str.",
+                "hausnummer":63,
+                "plz":"40210",
+                "ort":"Düsseldorf",
+                "bemerkung":"Raum D312"
+            },
+            {
+                "strasse":"Graf-Adolf-Str.",
+                "hausnummer":63,
+                "plz":"40210",
+                "ort":"Düsseldorf",
+                "bemerkung":"Raum D320"
+            },
+            {
+                "strasse":"Technologiepark",
+                "hausnummer":11,
+                "plz":"33100",
+                "ort":"Paderborn",
+                "bemerkung":"Raum 110"
+            },
+            {
+                "strasse":"Technologiepark",
+                "hausnummer":11,
+                "plz":"33100",
+                "ort":"Paderborn",
+                "bemerkung":"Raum 120"
+            },
+            {
+                "strasse":"Petuelring",
+                "hausnummer":130,
+                "plz":"80788",
+                "ort":"München",
+                "bemerkung":"Personalabteilung"
+            },
+            {
+                "strasse":"Auto-Union-Straße",
+                "hausnummer":"1",
+                "plz":"85045",
+                "ort":"Ingolstadt",
+                "bemerkung":"Personalabteilung"
+            },
+            {
+                "strasse":"Henry-Ford-Str.",
+                "hausnummer":"1",
+                "plz":"50735",
+                "ort":"Köln",
+                "bemerkung":"Personalabteilung"
+            },
+            {
+                "strasse":"Porscheplatz",
+                "hausnummer":"1",
+                "plz":"70435",
+                "ort":"Stuttgart",
+                "bemerkung":"Personalabteilung"
+            }
+        ],
+        "tarif":[
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":"1",
+                "stundenlohn":"21.45"
+            },
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":"2",
+                "stundenlohn":"21.34"
+            },
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":3,
+                "stundenlohn":"24.32"
+            },
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":4,
+                "stundenlohn":"26.39"
+            },
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":5,
+                "stundenlohn":"30.31"
+            },
+            {
+                "bezeichnung":"TV-L 13 2018 West",
+                "stufe":6,
+                "stundenlohn":"15.30"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":"1",
+                "stundenlohn":"30.76"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":"2",
+                "stundenlohn":"19.33"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":3,
+                "stundenlohn":"21.34"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":4,
+                "stundenlohn":"24.32"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":5,
+                "stundenlohn":"26.39"
+            },
+            {
+                "bezeichnung":"TV-L 12 2018 West",
+                "stufe":6,
+                "stundenlohn":"30.76"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":"1",
+                "stundenlohn":"13.39"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":"2",
+                "stundenlohn":"14.71"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":3,
+                "stundenlohn":"15.40"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":4,
+                "stundenlohn":"16.07"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":5,
+                "stundenlohn":"16.59"
+            },
+            {
+                "bezeichnung":"TV-L 5 2018 West",
+                "stufe":6,
+                "stundenlohn":"16.94"
+            }
+        ],
+        "schulungsanbieter":[
+            {
+                "adresse":15,
+                "bezeichnung":"Konfuzius Institut",
+                "telefon":"(0211) 4162 8540",
+                "email":"info@konfuzius-duesseldorf.de"
+            },
+            {
+                "adresse":14,
+                "bezeichnung":"The MathWorks, Inc.",
+                "telefon":"+ 49-89-45235-6700",
+                "email":null
+            }
+        ],
+        "schulung":[
+            {
+                "anbieter":"1",
+                "thema":"Business Chinesisch B1.1"
+            },
+            {
+                "anbieter":"1",
+                "thema":"Business Chinesisch B1.3"
+            },
+            {
+                "anbieter":"2",
+                "thema":"Model-Based Design und Codegenerierung von AUTOSAR-Softwarekomponenten"
+            },
+            {
+                "anbieter":"2",
+                "thema":"MATLAB Grundlagen für Anwendungen im Automobilbau"
+            }
+        ],
+        "schulungstermin":[
+            {
+                "adresse":17,
+                "schulung":"1",
+                "beginn":"2018-02-15 09:00:00",
+                "ende":"2018-02-15 13:00:00"
+            },
+            {
+                "adresse":17,
+                "schulung":"1",
+                "beginn":"2018-02-22 09:00:00",
+                "ende":"2018-02-22 13:00:00"
+            },
+            {
+                "adresse":17,
+                "schulung":"1",
+                "beginn":"2018-03-01 09:00:00",
+                "ende":"2018-03-01 13:00:00"
+            },
+            {
+                "adresse":17,
+                "schulung":"1",
+                "beginn":"2018-03-08 09:00:00",
+                "ende":"2018-03-08 13:00:00"
+            },
+            {
+                "adresse":16,
+                "schulung":"2",
+                "beginn":"2018-02-15 13:00:00",
+                "ende":"2018-02-15 17:00:00"
+            },
+            {
+                "adresse":16,
+                "schulung":"2",
+                "beginn":"2018-02-22 13:00:00",
+                "ende":"2018-02-15 17:00:00"
+            },
+            {
+                "adresse":16,
+                "schulung":"2",
+                "beginn":"2018-03-01 13:00:00",
+                "ende":"2018-02-15 17:00:00"
+            },
+            {
+                "adresse":16,
+                "schulung":"2",
+                "beginn":"2018-03-08 13:00:00",
+                "ende":"2018-02-15 17:00:00"
+            },
+            {
+                "adresse":18,
+                "schulung":3,
+                "beginn":"2018-03-15 09:00:00",
+                "ende":"2018-02-15 15:00:00"
+            },
+            {
+                "adresse":19,
+                "schulung":4,
+                "beginn":"2018-03-22 09:00:00",
+                "ende":"2018-02-15 15:00:00"
+            }
+        ],
+        "faehigkeit":[
+            {
+                "bezeichnung":"C Programmieren",
+                "kategorie":"Softwareentwicklung"
+            },
+            {
+                "bezeichnung":"Python Programmieren",
+                "kategorie":"Softwareentwicklung"
+            },
+            {
+                "bezeichnung":"Requirements Engineering mit Doors",
+                "kategorie":"Produktentwicklung"
+            },
+            {
+                "bezeichnung":"AUTOSAR",
+                "kategorie":"Automotive"
+            },
+            {
+                "bezeichnung":"Chinesisch",
+                "kategorie":"Sprachen"
+            },
+            {
+                "bezeichnung":"Englisch",
+                "kategorie":"Sprachen"
+            }
+        ],
+        "konto":[
+            {
+                "benutzername":"smeister",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"ktraugott",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"mfarber",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"sbar",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"meisenhauer",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"mjung",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"lmaur",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"mkuhn",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"lschneider",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"kmuller",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"lbrandt",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"ybader",
+                "passwort":"lentulus"
+            },
+            {
+                "benutzername":"feisenhower",
+                "passwort":"lentulus"
+            }
+        ],
+        "kunde":[
+            {
+                "adresse":20,
+                "bezeichnung":"BMW AG",
+                "ansprechpartner":"Swen Feierabend",
+                "telefon":null,
+                "email":"s.feierabend@bmw.de"
+            },
+            {
+                "adresse":21,
+                "bezeichnung":"Audi AG",
+                "ansprechpartner":"Uta Gerber",
+                "telefon":null,
+                "email":"u.gerber@audi.de"
+            },
+            {
+                "adresse":22,
+                "bezeichnung":"Ford-Werke GmbH",
+                "ansprechpartner":"Ralf Schultz",
+                "telefon":null,
+                "email":"r.schultz@ford.de"
+            },
+            {
+                "adresse":23,
+                "bezeichnung":"Porsche AG",
+                "ansprechpartner":"Kevin Schmitz",
+                "telefon":null,
+                "email":"k.schmitz@porsche.de"
+            }
+        ],
+        "kundenanfrage":[
+            {
+                "kunde":"1",
+                "lohnangebot":"35.00",
+                "wochenstunden":35,
+                "beginn":"2018-03-01",
+                "ende":"2020-02-28"
+            },
+            {
+                "kunde":"1",
+                "lohnangebot":"37.00",
+                "wochenstunden":35,
+                "beginn":"2018-03-01",
+                "ende":"2019-02-28"
+            },
+            {
+                "kunde":"1",
+                "lohnangebot":"42.00",
+                "wochenstunden":35,
+                "beginn":"2018-05-01",
+                "ende":"2018-11-30"
+            },
+            {
+                "kunde":"2",
+                "lohnangebot":"34.00",
+                "wochenstunden":35,
+                "beginn":"2018-04-01",
+                "ende":"2019-03-31"
+            },
+            {
+                "kunde":"2",
+                "lohnangebot":"33.00",
+                "wochenstunden":35,
+                "beginn":"2018-06-01",
+                "ende":"2020-05-31"
+            },
+            {
+                "kunde":3,
+                "lohnangebot":"28.00",
+                "wochenstunden":35,
+                "beginn":"2018-04-01",
+                "ende":"2018-10-31"
+            },
+            {
+                "kunde":3,
+                "lohnangebot":"30.00",
+                "wochenstunden":35,
+                "beginn":"2018-05-01",
+                "ende":"2020-04-30"
+            },
+            {
+                "kunde":4,
+                "lohnangebot":"30.00",
+                "wochenstunden":35,
+                "beginn":"2018-03-01",
+                "ende":"2020-02-28"
+            },
+            {
+                "kunde":4,
+                "lohnangebot":"35.00",
+                "wochenstunden":35,
+                "beginn":"2018-05-01",
+                "ende":"2020-04-30"
+            },
+            {
+                "kunde":4,
+                "lohnangebot":"40.00",
+                "wochenstunden":35,
+                "beginn":"2018-05-01",
+                "ende":"2019-04-30"
+            }
+        ],
+        "faehigkeit_kundenanfrage":[
+            {
+                "faehigkeit":"2",
+                "kundenanfrage":"1",
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":4,
+                "kundenanfrage":"1",
+                "niveau":"Wünschenswert"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":"2",
+                "niveau":"mind. 3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":3,
+                "kundenanfrage":"2",
+                "niveau":"Wünschenswert"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":3,
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":5,
+                "kundenanfrage":3,
+                "niveau":"HSK 2"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":4,
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":6,
+                "kundenanfrage":4,
+                "niveau":"verhandlungssicher"
+            },
+            {
+                "faehigkeit":5,
+                "kundenanfrage":5,
+                "niveau":"HSK 3"
+            },
+            {
+                "faehigkeit":6,
+                "kundenanfrage":5,
+                "niveau":"verhandlungssicher"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":6,
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":4,
+                "kundenanfrage":6,
+                "niveau":"Wünschenswert"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":7,
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":4,
+                "kundenanfrage":7,
+                "niveau":"Wünschenswert"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":8,
+                "niveau":"mind. 3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":3,
+                "kundenanfrage":8,
+                "niveau":"Wünschenswert"
+            },
+            {
+                "faehigkeit":"1",
+                "kundenanfrage":9,
+                "niveau":"mind. 3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":3,
+                "kundenanfrage":9,
+                "niveau":"mind. 1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":"2",
+                "kundenanfrage":10,
+                "niveau":"mind. 3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":4,
+                "kundenanfrage":10,
+                "niveau":"mind. 1 Jahre Berufserfahrung"
+            }
+        ],
+        "verwaltungsangestellter":[
+            {
+                "personalnummer":100001,
+                "adresse":"1",
+                "konto":"1",
+                "vorname":"Sarah",
+                "nachname":"Meister",
+                "email":"SarahMeister@lentulus.de",
+                "telefon":"+49 571 2501 - 04",
+                "geburtsdatum":"1991-04-30"
+            },
+            {
+                "personalnummer":100002,
+                "adresse":"2",
+                "konto":"2",
+                "vorname":"Katja",
+                "nachname":"Traugott",
+                "email":"KatjaTraugott@lentulus.de",
+                "telefon":"+49 571 2501 - 14",
+                "geburtsdatum":"1990-07-11"
+            },
+            {
+                "personalnummer":100003,
+                "adresse":3,
+                "konto":3,
+                "vorname":"Marko",
+                "nachname":"Farber",
+                "email":"MarkoFarber@lentulus.de",
+                "telefon":"+49 571 2501 - 06",
+                "geburtsdatum":"1975-04-10"
+            }
+        ],
+        "leiharbeiter":[
+            {
+                "personalnummer":200001,
+                "adresse":4,
+                "konto":4,
+                "verwalter":100001,
+                "vorname":"Swen",
+                "nachname":"Bar",
+                "email":"SwenBar@einrot.com",
+                "telefon":"06555 33 97 78",
+                "geburtsdatum":"1977-09-25",
+                "lebenslauf":null
+            },
+            {
+                "personalnummer":200002,
+                "adresse":5,
+                "konto":5,
+                "verwalter":100001,
+                "vorname":"Michelle",
+                "nachname":"Eisenhauer",
+                "email":"MichelleEisenhauer@cuvox.de",
+                "telefon":"03764 62 75 70",
+                "geburtsdatum":"1986-03-03",
+                "lebenslauf":null
+            },
+            {
+                "personalnummer":200003,
+                "adresse":6,
+                "konto":6,
+                "verwalter":100003,
+                "vorname":"Mathias",
+                "nachname":"Jung",
+                "email":"MathiasJung@cuvox.de",
+                "telefon":"06364 92 10 12",
+                "geburtsdatum":"1982-06-22",
+                "lebenslauf":null
+            },
+            {
+                "personalnummer":200004,
+                "adresse":7,
+                "konto":7,
+                "verwalter":100002,
+                "vorname":"Lisa",
+                "nachname":"Maur",
+                "email":"LisaMaur@cuvox.de",
+                "telefon":"089 71 07 89",
+                "geburtsdatum":"1992-06-27",
+                "lebenslauf":null
+            },
+            {
+                "personalnummer":200005,
+                "adresse":8,
+                "konto":8,
+                "verwalter":100002,
+                "vorname":"Mathias",
+                "nachname":"Kuhn",
+                "email":"MathiasKuhn@cuvox.de",
+                "telefon":"07581 57 56 16",
+                "geburtsdatum":"1974-03-03",
+                "lebenslauf":null
+            },
+            {
+                "personalnummer":200006,
+                "adresse":9,
+                "konto":9,
+                "verwalter":100001,
+                "vorname":"Luca",
+                "nachname":"Schneider",
+                "email":"LucaSchneider@cuvox.de",
+                "telefon":"02151 89 11 81",
+                "geburtsdatum":"1991-12-10",
+                "lebenslauf":null
+            }
+        ],
+        "faehigkeit_leiharbeiter":[
+            {
+                "faehigkeit":"1",
+                "leiharbeiter":200001,
+                "niveau":"1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":6,
+                "leiharbeiter":200001,
+                "niveau":"konversationsfähig"
+            },
+            {
+                "faehigkeit":"1",
+                "leiharbeiter":200002,
+                "niveau":"Erfahrung aus Studium"
+            },
+            {
+                "faehigkeit":6,
+                "leiharbeiter":200002,
+                "niveau":"verhandlungssischer"
+            },
+            {
+                "faehigkeit":"2",
+                "leiharbeiter":200003,
+                "niveau":"Erfahrung aus Studium"
+            },
+            {
+                "faehigkeit":5,
+                "leiharbeiter":200003,
+                "niveau":"konversationsfähig"
+            },
+            {
+                "faehigkeit":"2",
+                "leiharbeiter":200004,
+                "niveau":"3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":3,
+                "leiharbeiter":200004,
+                "niveau":"1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":"1",
+                "leiharbeiter":200005,
+                "niveau":"1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":4,
+                "leiharbeiter":200005,
+                "niveau":"1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":5,
+                "leiharbeiter":200006,
+                "niveau":"konversationsfähig"
+            },
+            {
+                "faehigkeit":6,
+                "leiharbeiter":200006,
+                "niveau":"verhandlungssischer"
+            }
+        ],
+        "bewerber":[
+            {
+                "adresse":10,
+                "konto":10,
+                "verwalter":100003,
+                "vorname":"Klaus",
+                "nachname":"Muller",
+                "email":"KlausMuller@einrot.com",
+                "telefon":"06021 13 14 27",
+                "geburtsdatum":"1983-06-13",
+                "lebenslauf":null
+            },
+            {
+                "adresse":11,
+                "konto":11,
+                "verwalter":100003,
+                "vorname":"Luca",
+                "nachname":"Brandt",
+                "email":"LucaBrandt@cuvox.de",
+                "telefon":"05507 38 35 40",
+                "geburtsdatum":"1992-03-16",
+                "lebenslauf":null
+            },
+            {
+                "adresse":12,
+                "konto":12,
+                "verwalter":100002,
+                "vorname":"Yvonne",
+                "nachname":"Bader",
+                "email":"YvonneBader@cuvox.de",
+                "telefon":"079 54 68 27",
+                "geburtsdatum":"1990-01-19",
+                "lebenslauf":null
+            },
+            {
+                "adresse":13,
+                "konto":13,
+                "verwalter":null,
+                "vorname":"Frank",
+                "nachname":"Eisenhower",
+                "email":"FrankEisenhower@cuvox.de",
+                "telefon":"03641 33 33 28",
+                "geburtsdatum":"1988-08-09",
+                "lebenslauf":null
+            }
+        ],
+        "faehigkeit_bewerber":[
+            {
+                "faehigkeit":"1",
+                "bewerber":"1",
+                "niveau":"1 Jahr Berufserfahrung"
+            },
+            {
+                "faehigkeit":6,
+                "bewerber":"1",
+                "niveau":"konversationsfähig"
+            },
+            {
+                "faehigkeit":"1",
+                "bewerber":"2",
+                "niveau":"Erfahrung aus Studium"
+            },
+            {
+                "faehigkeit":6,
+                "bewerber":"2",
+                "niveau":"verhandlungssischer"
+            },
+            {
+                "faehigkeit":"2",
+                "bewerber":3,
+                "niveau":"Erfahrung aus Studium"
+            },
+            {
+                "faehigkeit":5,
+                "bewerber":3,
+                "niveau":"konversationsfähig"
+            },
+            {
+                "faehigkeit":"2",
+                "bewerber":4,
+                "niveau":"3 Jahre Berufserfahrung"
+            },
+            {
+                "faehigkeit":3,
+                "bewerber":4,
+                "niveau":"1 Jahr Berufserfahrung"
+            }
+        ],
+        "arbeitsvertrag":[
+            {
+                "tarif_stufe":"1",
+                "tarif_bezeichnung":"TV-L 13 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200001,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":null
+            },
+            {
+                "tarif_stufe":3,
+                "tarif_bezeichnung":"TV-L 13 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200001,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":"2018-01-31 00:00:00"
+            },
+            {
+                "tarif_stufe":"2",
+                "tarif_bezeichnung":"TV-L 12 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200003,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":null
+            },
+            {
+                "tarif_stufe":"1",
+                "tarif_bezeichnung":"TV-L 12 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200002,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":null
+            },
+            {
+                "tarif_stufe":"2",
+                "tarif_bezeichnung":"TV-L 13 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200002,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":null
+            },
+            {
+                "tarif_stufe":"1",
+                "tarif_bezeichnung":"TV-L 13 2018 West",
+                "verwalter":100001,
+                "leiharbeiter":200001,
+                "beginn":"2016-02-01 00:00:00",
+                "ende":null
+            }
+        ],
+        "ueberlassungsvertrag":[
+            {
+                "kunde":"1",
+                "leiharbeiter":200001,
+                "beginn":"2017-08-01",
+                "ende":"2019-07-30",
+                "wochenstunden":35,
+                "stundenlohn":"26.00"
+            },
+            {
+                "kunde":4,
+                "leiharbeiter":200002,
+                "beginn":"2017-07-01",
+                "ende":"2019-06-30",
+                "wochenstunden":35,
+                "stundenlohn":"30.00"
+            },
+            {
+                "kunde":3,
+                "leiharbeiter":200004,
+                "beginn":"2017-08-01",
+                "ende":"2018-07-30",
+                "wochenstunden":35,
+                "stundenlohn":"35.00"
+            },
+            {
+                "kunde":4,
+                "leiharbeiter":200005,
+                "beginn":"2017-10-01",
+                "ende":"2019-09-30",
+                "wochenstunden":35,
+                "stundenlohn":"28.00"
+            },
+            {
+                "kunde":"1",
+                "leiharbeiter":200006,
+                "beginn":"2017-06-01",
+                "ende":"2020-05-31",
+                "wochenstunden":35,
+                "stundenlohn":"27.00"
+            }
+        ],
+        "leiharbeiter_schulung":[
+            {
+                "leiharbeiter":200001,
+                "schulung":"1"
+            },
+            {
+                "leiharbeiter":200001,
+                "schulung":3
+            },
+            {
+                "leiharbeiter":200003,
+                "schulung":"2"
+            },
+            {
+                "leiharbeiter":200004,
+                "schulung":4
+            },
+            {
+                "leiharbeiter":200006,
+                "schulung":3
+            }
+        ],
+        "stellenausschreibung":[
+            {
+                "kundenanfrage":"1",
+                "verwalter":100001,
+                "stellenbezeichnung":"ENTWICKLUNGSINGENIEUR 48V ELEKTRONIK-HARDWARE (W/M)",
+                "beschreibung":"Wir bieten Ihnen bei einem großen Automobil OEM eine anspruchsvolle Tätigkeit als Entwicklungsingenieur 48V Elektronik-Hardware (w/m) im Bereich E/E Getriebe. Im Rahmen Ihrer Tätigkeit entwickeln Sie gemeinsam mit externen Systemlieferanten und internen Prozesspartnern elektronische Systemkomponenten und die zugehörigen Diagnose-/Steuerungssoftware von Getrieben vom Konzept bis zur Serienreife. Sie bewerten technische Konzepte von externen Lieferanten, stimmen hierzu die Anforderungen ab und begleiten die Serienentwicklung. Der Schwerpunkt Ihrer Tätigkeit ist neben der Lastenhefterstellung die Spezifikation von E/E Hardware für 48V-Systeme, Diagnosen sowie deren Absicherung und Qualifikation. Darüber hinaus stellen Sie sicher, dass die Zulassungsfähigkeit von Getrieben und Antriebssträngen im Rahmen der gesetzlichen Anforderungen gegeben ist. Ihr Engagement in mehreren Projekt- und Fachteams zur Realisierung von standardisierten Lösungen rundet Ihre anspruchsvolle Tätigkeit ab."
+            },
+            {
+                "kundenanfrage":"2",
+                "verwalter":100001,
+                "stellenbezeichnung":"PROJEKTLEITER (W/M) FÜR ELEKTRIK/ELEKTRONIK-ARCHITEKTUR",
+                "beschreibung":"Wir bieten Ihnen bei einem großen Automobil OEM eine innovative Aufgabe als Projektleiter (w/m) für Elektrik/Elektronik-Architektur. Im Rahmen Ihrer verantwortungsvollen Tätigkeit gestalten und bestätigen Sie die Elektrik/Elektronik-Architektur unserer zukünftigen Fahrzeugprojekte. Sie stellen in der frühen Phase der Produktentstehung sicher, dass neue Bordnetz-Architekturen aus Sicht der Systemintegration und Absicherung tragfähig und beherrschbar sind. Darüber hinaus analysieren und bewerten Sie innovative Bordnetz-Alternativen und bringen Ihre Lösungsvorschläge ein. Zur Absicherung der Ergebnisse bauen Sie ein Netzwerk über die Fachbereiche Fahrdynamik, Fahrerassistenz und Interieur auf. Zu Ihrem komplexen Tätigkeitsfeld gehört die gesetzten Ziele für unsere Produkte und Prozesse in der Architektur zu verankern. Die Unterstützung von Entscheidungsprozessen und das regelmäßige Berichten der Zielerreichung in den zuständigen Steuerungsgremien runden Ihr vielfältiges Aufgabengebiet ab."
+            },
+            {
+                "kundenanfrage":4,
+                "verwalter":100001,
+                "stellenbezeichnung":"PROJEKTLEITUNG E/E-KONFIGURATIONSMANAGEMENT (W/M)",
+                "beschreibung":"Sie suchen eine Herausforderung in der Entwicklung Elektrik / Elektronik? Wir bieten Ihnen eine abwechslungsreiche und verantwortungsvolle Tätigkeit in der Software-Logistik für Fahrzeug-Steuergeräte. An der Schnittstelle zwischen Entwicklung, Software-Lieferanten, Produktionswerken und Handelsorganisation verantworten Sie die qualitative Intergation von Software mit ihren logistischen Informationen. Die Beherrschung komplexer SW-Konfigurationen über alle Steuergeräte und Fahrzeugprojekte spricht Sie an und motiviert Sie zu innovativen Lösungen. Eigenständig identifizieren Sie situative und längerfristig wirksame Maßnahmen und initiieren die Veränderungen im Prozess und den IT-Tools bei Bedarf. Ihr loyales Engagement macht Sie zum anerkannten Partner. Ihre Vernetzung über Entwicklung, Produktion und Vertrieb bietet Ihnen die Basis für ein breites Verständnis über die Entwicklung Elektrik / Elektronik."
+            },
+            {
+                "kundenanfrage":6,
+                "verwalter":100001,
+                "stellenbezeichnung":"TESTMANAGER HOCHVOLTSPEICHER (W/M)",
+                "beschreibung":"Wir bieten Ihnen bei bei einem großen Automobil OEM eine interessante Tätigkeit als Testmanager (w/m) im Bereich elektrischer Hochvoltspeicher basierend auf der Lithium-Ionen-Technologie. Im Rahmen Ihrer Tätigkeit arbeiten Sie in einem internationalen und interdisziplinären Team und verantworten die Hochvoltspeichersysteme während des Entwicklungsprozesses bis hin zur Serie. In enger Zusammenarbeit mit der technischen Projektleitung bestimmen Sie die notwendigen Tests und entwickeln Testpläne unter Berücksichtigung von Kosten und Projektterminen. Darüber hinaus koordinieren und überwachen Sie die Versuche interner und externer Partner. Die anschließende Auswertung der Testresultate aus mechanischer, thermischer und elektrischer Perspektive und Ihre Handlungsempfehlung zur Freigabe runden Ihr herausforderndes Aufgabengebiet ab."
+            },
+            {
+                "kundenanfrage":8,
+                "verwalter":100001,
+                "stellenbezeichnung":"IT-PROJEKTLEITER / SOLUTION-ARCHITEKT (W/M)",
+                "beschreibung":"Wir bieten Ihnen bei bei einem großen Automobil OEM eine interessante Tätigkeit als IT-Projektleiter / Solution-Architekt (w/m) im Bereich der Funktions- und Softwarearchitektur für Fahrzeugsysteme. Ihre Kernaufgaben umfassen die Erarbeitung von Prozessen und IT-Systemen, welche eine Definition und Abstimmung einer serviceorientierten Funktions- und Softwarearchitektur ermöglichen. In enger Zusammenarbeit mit Fach- und Zentralstellen konsolidieren und bewerten Sie Anforderungen, leiten daraus stimmige Konzepte und Methoden für Prozesse und IT-Systeme ab und begleiten deren Umsetzung bis zum Produktiveinsatz. Die organisationsübergreifende Zusammenarbeit mit Funktions- und Softwarearchitekten, Prozessstellen und Entwicklungspartnern runden Ihr spannendes Aufgabengebiet ab."
+            },
+            {
+                "kundenanfrage":9,
+                "verwalter":100001,
+                "stellenbezeichnung":"ENTWICKLUNGSEXPERTE FÜR ANZEIGE- UND BEDIENKONZEPTE (W/M)",
+                "beschreibung":"Ihre Aufgabe als Spezialist/-in Entwicklung Anzeige- und Bedienkonzept bei einem großen Automobil OEM ist es, innovative Interaktionskonzepte in und um das Fahrzeug zu entwickeln. Für die Marken des OEM sind baureihenübergreifend konsistente und zukunftsfähige Interaktionskonzepte in und um das Fahrzeug zu entwickeln, die gleichzeitig Raum für eine markenspezifische Akzentuierung bieten. Mit dem Interaktionskonzept schaffen Sie ein begeisterndes End to End Bedienerlebnis und stellen eine hervorragende Usability sicher. Sie stellen den Kunden in den Mittelpunkt und kombinieren ein ausgeprägtes technisches Verständnis in diesem Themengebiet mit einem Gespür für Kundenbedürfnisse und Gestaltungslösungen. Des Weiteren verfügen Sie über die Erfahrung und das Wissen, intuitive, effiziente und vor allem auch fahrtgerechte Konzepte zu definieren. Sie koordinieren eigenverantwortlich die Abstimmung mit den relevanten Prozesspartnern und stellen die Bewertung der Anzeige- und Bedienkonzepte hinsichtlich Gebrauchstauglichkeit, Akzeptanz sowie der Einhaltung interner und externer Anforderungen sicher. "
+            }
+        ],
+        "stellenausschreibung_bewerber":[
+            {
+                "stellenausschreibung":"2",
+                "bewerber":"2",
+                "anschreiben":null
+            },
+            {
+                "stellenausschreibung":3,
+                "bewerber":3,
+                "anschreiben":null
+            },
+            {
+                "stellenausschreibung":6,
+                "bewerber":4,
+                "anschreiben":null
+            }
+        ]
+    }
+}

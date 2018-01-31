@@ -9,6 +9,7 @@ import java.io.IOException;
  */
 public class Main {
     private final static String inputFileOption = "i";
+    private final static String hostOption = "h";
     private final static String genericRequestOption = "g";
 
     /**
@@ -24,6 +25,7 @@ public class Main {
         CommandLine commandLine;
 
         String inputFilePath = null;
+        String host = "localhost";
         Boolean saveGenericRequests = false;
 
         try {
@@ -44,10 +46,13 @@ public class Main {
         if (commandLine.hasOption(inputFileOption))
             inputFilePath = commandLine.getOptionValue(inputFileOption);
 
+        if (commandLine.hasOption(hostOption))
+            host = commandLine.getOptionValue(hostOption);
+
         if (commandLine.hasOption(genericRequestOption))
             saveGenericRequests = true;
 
-        MySqlToRedisAdapter adapter = new MySqlToRedisAdapter();
+        MySqlToRedisAdapter adapter = new MySqlToRedisAdapter(host);
         adapter.setSaveGenericRequest(saveGenericRequests);
         adapter.process(inputFilePath);
     }
@@ -67,12 +72,21 @@ public class Main {
                 .desc("File path to the sql file to convert")
                 .build();
 
+        Option host = Option.builder(hostOption)
+                .longOpt("hostname")
+                .hasArg()
+                .argName("URL")
+                .required(false)
+                .desc("URL of the redis host to connect to")
+                .build();
+
         Option saveGenericRequests = Option.builder(genericRequestOption)
                 .longOpt("generic-requests")
                 .desc("If true the generic interim request will be saved to a json file")
                 .build();
 
         options.addOption(filepath);
+        options.addOption(host);
         options.addOption(saveGenericRequests);
 
         return options;
